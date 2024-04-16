@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Common Class Project</title>
+</head>
+<body>
+    <a class="skip" href = "#main">Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul class = "nav-container">
+                <li id="selected"><a href = "index.html">Home</a></li>
+                <li><a href = "pets.html">Pets</a></li>
+                <li><a href = "recipes.html">Recipes</a></li>
+                <li><a href = "travel.html">Travel</a></li>
+            </ul>
+        </nav>
+        <h1>Home</h1>
+    </header>
+    <main id = "main">
+        <div class="home-grid-container">
+            <div class = "home-item1">
+                <h2>Pets, recipes, and travel</h2>
+                <p>Welcome to PRT, your go-to destination for all things pets, recipes, and travel! Explore a world of captivating content where we cater to your love for furry companions, culinary delights, and globetrotting adventures. </p>
+
+            </div>
+
+            <div class="home-item2">
+                <label><input type="checkbox"  id="check" name="bacon" value ="visible" onclick = challenge(this)> Click here to show Bacon! </label>
+            </div>   
+
+            
+            <img class = "home-item3" id = "bacon" src="images/bacon.jpg" width = "200" alt="Brown labradoodle wearing colorful lei">
+            <img class = "home-item4" src="images/Oatmeal-Cookies.jpg" width = "200" alt="Oatmeal cookies on a metal cooling rack">
+            <img class = "home-item5" src= "images/yellowstone_sunset.jpg" width= "200" alt= "Yellowstone at sunset">
+            
+        </div>
+    </main>
+
+    <script>
+        function challenge(element){
+          if(element.checked){
+            document.getElementById("bacon").style.display = "block";
+            }
+          else{
+            document.getElementById("bacon").style.display = "none";
+          }
+          }
+        
+      </script>   
+
+</body>
+</html>
